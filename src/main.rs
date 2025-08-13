@@ -21,7 +21,7 @@ fn main() {
     let mode = match args.get(1).expect(help).as_str() {
         "--decimal" | "-d" => ConvertFrom::Decimal,
         "--ternary" | "-t" => ConvertFrom::Ternary,
-        _ => panic!(""),
+        _ => panic!("{}", help),
     };
 
     let string = args
