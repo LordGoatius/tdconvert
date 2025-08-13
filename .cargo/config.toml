@@ -1,0 +1,5 @@
+[unsable]
+build-std = ["core", "alloc"]
+
+[build]
+rustflags = ["-Z", "location-detail=none"]
